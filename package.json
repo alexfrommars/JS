@@ -1,0 +1,19 @@
+{
+  "name": "js-demo",
+  "version": "0.0.0",
+  "description": "just a lil demo for a course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alexfrommars/JS-practice.git"
+  },
+  "author": "Alexandra S. <lemonsrevenge@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexfrommars/JS-practice/issues"
+  },
+  "homepage": "https://github.com/alexfrommars/JS-practice#readme"
+}
