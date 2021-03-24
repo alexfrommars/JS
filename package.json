@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/alexfrommars/JS-practice/issues"
   },
-  "homepage": "https://github.com/alexfrommars/JS-practice#readme"
+  "homepage": "https://github.com/alexfrommars/JS-practice#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
 }
