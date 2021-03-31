@@ -1,0 +1,11 @@
+let ticketcount=3; 
+const ticketprice=9; 
+let orgprice; 
+let discountedamt= 0;
+orgprice=ticketcount*ticketprice; 
+discountedamt=orgprice-(orgprice*10/100); 
+document.write("Ticket Details"); 
+document.write("total no of seats booked:"+ticketcount); 
+document.write("total cost fo 3 ticekts:"+orgprice); 
+document.write("Festive discount:10%"); 
+document.write("total cost after discount:"+discountedamt);
