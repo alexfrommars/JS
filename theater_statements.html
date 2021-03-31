@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Details</title>
+    <style>
+        div#maincontent {
+            height: 200px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h4 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="heading">
+            <b>Theatre Drama</b>
+        </div>
+        <div id="maincontent">
+            <h4>Your Ticket Details:</h4>
+            <br>
+            <script>
+                // Write the code to display the total price and discounted price of tickets
+                seats=prompt("enter the number of seats");
+
+
+
+                const cost=250;
+
+
+
+                var totalAmount=0;
+
+
+
+                if(seats<=2 && seats>0)
+
+                {
+
+                    var totalAmount=cost*seats
+
+                    document.write("For "+seats+" tickets, you need to pay:Rs."+totalAmount);
+
+                }
+
+     
+
+                else if(seats>2 && seats<5)
+
+                {
+
+                    var noDiscount=cost*seats
+
+                    var discount=5
+
+                    for(var customer=1;customer<=seats;customer++){
+
+                        discountAmount=cost-(cost/100*discount)
+
+                        document.write("Tickets for customer "+customer+" gets "+discount+"% Discount!, Cost is: Rs."+discountAmount+"<br>")
+
+                        totalAmount+=discountAmount
+
+                        discount+=2
+
+                        }
+
+                    document.write("For "+seats+" tickets, you need to pay: Rs."+totalAmount+" instead of Rs."+noDiscount)
+
+                }
+
+     
+
+                else{
+
+                    document.write("Booking is not allowed")
+                }
+            </script>
+        </div>
+    </center>
+</body>
+</html>
